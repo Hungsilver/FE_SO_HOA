@@ -19,6 +19,7 @@ const BookStatus = ({books} : BookStatusProps) => {
                     <table className="min-w-full table-auto border-collapse">
                         <thead>
                             <tr className="bg-blue-100">
+                                <th className="border-b-2 px-4 py-2 text-left">Mã sách</th>
                                 <th className="border-b-2 px-4 py-2 text-left">Tiêu đề</th>
                                 <th className="border-b-2 px-4 py-2 text-left">Tác giả</th>
                                 <th className="border-b-2 px-4 py-2 text-left">NXB</th>
@@ -26,8 +27,9 @@ const BookStatus = ({books} : BookStatusProps) => {
                             </tr>
                          </thead>
                         <tbody>
-                            {books.map((book, index) => (
-                                <tr key={index} className="bg-white">
+                            {books.map((book) => (
+                                <tr key={book.id} className="bg-white">
+                                    <td className="border-b-2 px-4 py-2">{book.id}</td>
                                     <td className="border-b-2 px-4 py-2">{book.tieude}</td>
                                     <td className="border-b-2 px-4 py-2">{book.tacgia}</td>
                                     <td className="border-b-2 px-4 py-2">{book.nxb}</td>
