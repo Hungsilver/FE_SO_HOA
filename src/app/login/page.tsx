@@ -31,8 +31,9 @@ const Login : React.FC = () => {
                             value={username}
                             onChange={(e) => setUsername(e.target.value)}
                             className="mb-4 p-2 border-2 border-gray-300 hover:border-blue-300 rounded w-full focus:border-blue-300 focus:ring-2 focus:ring-blue-300 outline-none"  
-                            required  
+                              
                             />  
+
                         <input  
                             type="password"  
                             placeholder="Mật khẩu"
