@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <>
         {pathname !== '/login' && (
-            <div className="py-3 shadow-lg flex justify-between items-center">
+            <div className="py-3 bg-blue-300 shadow-lg flex justify-between items-center">
                 <Icon
                 idicon='M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5'
                 style='ml-5 h-6 w-6'

@@ -1,6 +1,10 @@
 import Icon from "../icon";
 
-const BookStatus = () => {
+interface BookStatusProps {
+    books: Book[];
+  }
+
+const BookStatus = ({books} : BookStatusProps) => {
     return(
         <div className="shadow-lg rounded-lg mt-5 ml-10 h-auto w-[95.8%] p-2">
             <div className="border-b-2 h-10 flex">
@@ -9,6 +13,32 @@ const BookStatus = () => {
                     style = 'w-6 h-6'
                 />
                 <p className="ml-2">Sách đang thực hiện</p>
+            </div>
+            <div className="mt-4">
+                {books.length > 0 ? (
+                    <table className="min-w-full table-auto border-collapse">
+                        <thead>
+                            <tr className="bg-blue-100">
+                                <th className="border-b-2 px-4 py-2 text-left">Tiêu đề</th>
+                                <th className="border-b-2 px-4 py-2 text-left">Tác giả</th>
+                                <th className="border-b-2 px-4 py-2 text-left">NXB</th>
+                                <th className="border-b-2 px-4 py-2 text-left">Năm XB</th>
+                            </tr>
+                         </thead>
+                        <tbody>
+                            {books.map((book, index) => (
+                                <tr key={index} className="bg-white">
+                                    <td className="border-b-2 px-4 py-2">{book.tieude}</td>
+                                    <td className="border-b-2 px-4 py-2">{book.tacgia}</td>
+                                    <td className="border-b-2 px-4 py-2">{book.nxb}</td>
+                                    <td className="border-b-2 px-4 py-2">{book.namxb}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                ) : (
+                    <p>Không có sách đang thực hiện.</p>
+                )}
             </div>
         </div>
     );
