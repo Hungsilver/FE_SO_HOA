@@ -5,3 +5,12 @@ interface Book {
     nxb : string;
     namxb : number;
 }
+
+interface User {
+    id : number;
+    ten : string;
+    email : string;
+    username : string;
+    sdt : number;
+    quyen : string;
+}
