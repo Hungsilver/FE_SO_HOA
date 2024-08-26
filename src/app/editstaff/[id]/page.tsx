@@ -16,7 +16,7 @@ const EditStaff = () => {
                     <div className="flex justify-around">
                         <div className="w-1/4">
                             <p className="ml-2">Họ tên</p>
-                                <input placeholder="Họ tên" className="border rounded-lg w-full h-10 p-2">
+                                <input placeholder="Họ tên" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                         <div className="w-1/4">
@@ -25,41 +25,41 @@ const EditStaff = () => {
                         </div>
                         <div className="w-1/4">
                             <p className="ml-2">Số điện thoại</p>
-                                <input placeholder="SĐT" className="border rounded-lg w-full h-10 p-2">
+                                <input placeholder="SĐT" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                     </div>
                     <div className="flex justify-around mt-16">
                         <div className="w-1/4">
                             <p className="ml-2">Email</p>
-                            <input placeholder="Email" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="Email" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                         <div className="w-1/4">
                             <p className="ml-2">CCCD/CMT</p>
-                            <input placeholder="CCCD/CMT" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="CCCD/CMT" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                         <div className="w-1/4">
                             <p className="ml-2">Địa chỉ</p>
-                            <input placeholder="Địa chỉ" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="Địa chỉ" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                     </div>
                     <div className="flex justify-around mt-16">
                         <div className="w-1/4">
                             <p className="ml-2">Tên ngân hàng</p>
-                            <input placeholder="Tên ngân hàng" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="Tên ngân hàng" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                         <div className="w-1/4">
                             <p className="ml-2">Số tài khoản ngân hàng</p>
-                            <input placeholder="Số tài khoản ngân hàng" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="Số tài khoản ngân hàng" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                         <div className="w-1/4">
                             <p className="ml-2">Mã số thuế</p>
-                            <input placeholder="Mã số thuế" className="border rounded-lg w-full h-10 p-2">
+                            <input placeholder="Mã số thuế" className="border rounded-lg w-full h-10 p-2 outline-none focus:outline-blue-500">
                             </input>
                         </div>
                     </div>

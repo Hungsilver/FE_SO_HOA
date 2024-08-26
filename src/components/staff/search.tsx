@@ -11,10 +11,10 @@ const SearchStaff = (props : any) => {
             <div className="flex mt-5 ml-10">
                 <input placeholder="SĐT" onChange={props.sđt} className="border rounded-lg h-10 w-1/4 p-2 outline-none focus:outline-blue-500"/>
                 <input placeholder="Họ tên" onChange={props.ten} className="border rounded-lg ml-28 h-10 w-1/4 p-2 outline-none focus:outline-blue-500"/>
-                <SelectBox/>
+                <SelectBox />
                 <Button
                     namebtn = "Tìm kiếm"
-                    style = "rounded-lg bg-blue-400 w-24 h-10 ml-20"
+                    style = "rounded-lg bg-blue-400 w-24 h-10 ml-20 text-white"
                 />
             </div>
         </div>

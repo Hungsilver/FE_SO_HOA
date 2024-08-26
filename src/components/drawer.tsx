@@ -31,7 +31,7 @@ const Drawer = ({ isOpen, onClose }: any) => {
                         </li>  
                         <li className="flex items-center ml-5 space-x-3">
                             <PlusCircleIcon className="h-5 w-5 text-gray-600" />
-                            <Link href="/add-book" className="text-gray-600 hover:text-gray-800 transition-colors">
+                            <Link href="/addbook" className="text-gray-600 hover:text-gray-800 transition-colors">
                                 Thêm mới sách
                             </Link>
                         </li>  

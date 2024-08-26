@@ -19,3 +19,7 @@ interface OptionType {
     value: string;
     label: string;
   }
+
+interface Roll {
+    name : string;
+}

@@ -8,7 +8,7 @@ const options = [
   { value: "option2", label: "Scan" },
   { value: "option3", label: "Thiết lập text" },
   { value: "option4", label: "Thiết lập audio" },
-  { value: "option4", label: "Kiểm duyệt" },
+  { value: "option5", label: "Kiểm duyệt" },
 ];
 
 const SelectBox = () => {

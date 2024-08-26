@@ -33,7 +33,7 @@ const Navbar = () => {
     return (
         <>
         {pathname !== '/login' && (
-            <div className="py-3 bg-blue-300 shadow-lg flex justify-between items-center fixed top-0 left-0 w-full z-50">
+            <div className="py-3 bg-blue-300 shadow-lg flex justify-between items-center fixed top-0 left-0 right-0 w-full">
                 <button onClick={toggleDrawer} className="p-2 focus:outline-none ml-5">  
                     <Bars3Icon className="h-6 w-6 text-black-600" />  
                 </button>  

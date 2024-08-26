@@ -14,7 +14,7 @@ const Staff = () => {
     }, []);
 
     return(
-        <div className="w-full h-screen">
+        <div className="w-full h-full">
             <SearchStaff/>
             <StaffTable users = {users}/>
         </div>

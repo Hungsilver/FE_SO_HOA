@@ -2,15 +2,13 @@
 
 import React, { useState } from "react";
 import Select, { MultiValue } from "react-select";
+import data from '@/api/data.json';
 
 // Dữ liệu mẫu cho select box
-const options = [
-  { value: "option1", label: "Admin" },
-  { value: "option2", label: "Scan" },
-  { value: "option3", label: "Thiết lập text" },
-  { value: "option4", label: "Thiết lập audio" },
-  { value: "option4", label: "Kiểm duyệt" },
-];
+const options = data.Rolldata.map((role, index) => ({
+  value: `option${index + 1}`,
+  label: role.name,
+}));
 
 const SelectBox = () => {
     const [selectedOptions, setSelectedOptions] = useState<MultiValue<OptionType>>([]);

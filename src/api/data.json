@@ -90,5 +90,23 @@
             "sdt" : 1234567890,
             "quyen" : "Scan"
         }
-    ]
+    ],
+
+    "Rolldata": [
+        {
+          "name": "Admin"
+        },
+        {
+          "name": "Scan"
+        },
+        {
+          "name": "Thiết lập text"
+        },
+        {
+          "name": "Thiết lập audio"
+        },
+        {
+          "name": "Kiểm tra"
+        }
+      ]
 }
