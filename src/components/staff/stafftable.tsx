@@ -1,3 +1,4 @@
+import { useRouter } from "next/navigation";
 import Icon from "../icon";
 
 interface SearchStaffProps {
@@ -5,8 +6,15 @@ interface SearchStaffProps {
 }
 
 const StaffTable = ({users} : SearchStaffProps) => {
+
+    const router = useRouter();
+
+    const handleEdit = () => {
+        router.push("/editstaff");
+    }
+
     return (
-        <div className="p-5 w-full h-screen">
+        <div className="p-5 w-[95.8%] ml-10 rounded-lg h-auto overflow-y-scroll shadow-lg">
             {users.length > 0 ? (
                 <table className="min-w-full table-auto border-collapse">
                     <thead>
@@ -22,7 +30,7 @@ const StaffTable = ({users} : SearchStaffProps) => {
                     </thead>
                     <tbody>
                         {users.map((user , index) => (
-                            <tr key={user.id} className="bg-white h-20">
+                            <tr key={user.id} className="bg-white h-20 hover:bg-blue-200">
                                 <td className="border-b-2 px-4 py-2">{index + 1}</td>
                                 <td className="border-b-2 px-4 py-2">{user.ten}</td>
                                 <td className="border-b-2 px-4 py-2">{user.email}</td>
@@ -30,7 +38,7 @@ const StaffTable = ({users} : SearchStaffProps) => {
                                 <td className="border-b-2 px-4 py-2">{user.sdt}</td>
                                 <td className="border-b-2 px-4 py-2">{user.quyen}</td>
                                 <td className="border-b-2 px-4 py-2">
-                                <button>
+                                <button onClick={handleEdit}>
                                     <Icon
                                         idicon = 'm16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10'
                                         style = 'w-4 h-4'

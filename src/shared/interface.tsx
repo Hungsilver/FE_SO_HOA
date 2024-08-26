@@ -14,3 +14,8 @@ interface User {
     sdt : number;
     quyen : string;
 }
+
+interface OptionType {
+    value: string;
+    label: string;
+  }
