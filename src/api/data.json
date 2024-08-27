@@ -1,0 +1,39 @@
+{
+    "joblist": [
+        {
+            "id": "B001",
+            "title": "300 bài code thiếu nhi",
+            "pages": 320,
+            "price": 150000,
+            "task": "Scan"
+        },
+        {
+            "id": "B002",
+            "title": "Sách nấu ăn",
+            "pages": 250,
+            "price": 1500,
+            "task": "Scan"
+        },
+        {
+            "id": "B003",
+            "title": "Blackmyth: Ngộ Không chuyển thế",
+            "pages": 280,
+            "price": 5000,
+            "task": "Audio."
+        },
+        {
+            "id": "B004",
+            "title": "Danh bạ",
+            "pages": 300,
+            "price": 3000,
+            "task": "Thiết lập văn bản text."
+        },
+        {
+            "id": "B005",
+            "title": "How to laning in the Rift",
+            "pages": 350,
+            "price": 3000,
+            "task": "Thiết lập văn bản text."
+        }
+    ]
+}

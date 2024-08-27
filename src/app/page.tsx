@@ -9,16 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <div>E-book Vĩnh Phúc
-        <ul>
-          <li>
-            <Link href="/admin/dashboard/job">job</Link>
-          </li>
-          <li>
-            <a href="/admin/dashboard/user">user</a>
-          </li>
-        </ul>
-      </div>
+
 
       < Login />
     </>
