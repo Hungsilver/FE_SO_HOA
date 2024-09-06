@@ -9,7 +9,7 @@ interface BookStatusProps {
 
 const BookStatus = ({books} : BookStatusProps) => {
     const [currentPage, setCurrentPage] = useState(1);
-    const itemsPerPage = 5;
+    const itemsPerPage = 10;
 
     // Tính toán chỉ số của phần tử đầu tiên và cuối cùng trên trang hiện tại
     const indexOfLastItem = currentPage * itemsPerPage;

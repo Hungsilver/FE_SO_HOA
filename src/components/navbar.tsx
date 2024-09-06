@@ -7,16 +7,14 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'; 
 import Drawer from "./drawer";
 import { Bars3Icon } from '@heroicons/react/24/outline';  
+import Sidebar from "./sidebar";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+    const [isOpenSidebar , setIsOpenSidebar] = useState(false);
     const [hydrated, setHydrated] = useState(false);
     const pathname = usePathname();
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);  
 
-    const toggleDrawer = () => {  
-        setIsDrawerOpen(!isDrawerOpen);  
-    };  
     
     useEffect(() => {
         setHydrated(true);
@@ -26,6 +24,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const toggleSidebar = () => {  
+        setIsOpenSidebar(!isOpenSidebar);
+    };  
+
     if (!hydrated) {
         return null;
     }
@@ -34,10 +36,10 @@ const Navbar = () => {
         <>
         {pathname !== '/login' && (
             <div className="py-3 bg-blue-300 shadow-lg flex justify-between items-center fixed top-0 left-0 right-0 w-full">
-                <button onClick={toggleDrawer} className="p-2 focus:outline-none ml-5">  
+                <button onClick={toggleSidebar} className="p-2 focus:outline-none ml-5">  
                     <Bars3Icon className="h-6 w-6 text-black-600" />  
-                </button>  
-                <Drawer isOpen={isDrawerOpen} onClose={toggleDrawer} />
+                </button>
+                {/* <Sidebar/> */}
                 <div className="mx-5 flex items-center space-x-3">
                     <button className="size-6">
                         <Icon

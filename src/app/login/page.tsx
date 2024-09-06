@@ -17,7 +17,7 @@ const Login : React.FC = () => {
     }
 
     return (
-            <div className="flex justify-center items-center h-screen bg-gray-200">
+            <div className="flex flex-1 justify-center items-center h-screen bg-gray-200">
                 <div className="flex w-4/5 h-4/5 bg-white shadow-lg rounded-lg">  
                     <div className="flex-col w-1/2 bg-blue-400 text-white flex items-center justify-center">  
                         <Image src="/image/login_cover.83315090da4d28525c87.png" alt="Login Cover" width={300} height={300}/>

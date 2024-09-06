@@ -30,7 +30,7 @@ export default function HeaderDashboard() {
             />
             <div className="ml-2">
               <p>8</p>
-              <p>Cộng tác viên</p>
+              <p>Nhân viên</p>
             </div>
           </div>
           <div className="ml-14 flex items-center">

@@ -5,6 +5,7 @@ import BookStatus from "@/components/dashboard/bookstatus_table";
 import CompleteBook from "@/components/dashboard/completebook_table";
 import HeaderDashboard from "@/components/dashboard/header";
 import Statistics from "@/components/dashboard/statistics_table";
+import Sidebar from "@/components/sidebar";
 import axios from "axios";
 import { useEffect, useState } from "react";
 

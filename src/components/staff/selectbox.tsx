@@ -24,7 +24,7 @@ const SelectBox = () => {
         value={selectedOptions}
         onChange={handleChange}
         options={options}
-        className="basic-multi-select"
+        className="w-full"
         classNamePrefix="select"
         placeholder="Lựa chọn quyền"
       />
