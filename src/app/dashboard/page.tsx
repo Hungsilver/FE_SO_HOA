@@ -24,7 +24,7 @@ const Dashboard = () => {
     //   }, []);
 
     return(
-        <div className="h-screen w-full">
+        <div className="h-screen w-full mt-20">
             <HeaderDashboard/>
             <div className="flex w-full h-1/2 mt-5">
                 <Statistics/>

@@ -1,17 +1,15 @@
-import Image from "next/image";
-import Link from "next/link";
-import './globals.css'
-import React, { useState } from "react";
 
-import Login from "./login/page";
+'use client'
+
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 export default function Home() {
+  const router = useRouter();
 
-  return (
-    <>
+  useEffect(() => {
+    router.push('/login');
+  }, [router]);
 
-
-      < Login />
-    </>
-  )
+  return null;
 }

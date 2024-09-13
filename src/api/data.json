@@ -35,5 +35,105 @@
             "price": 3000,
             "task": "Thiết lập văn bản text."
         }
+    ],
+    "Bookdata": [
+        {
+            "id": 1,
+            "tieude": "TEST",
+            "tacgia": "VELT",
+            "nxb": "NXB Giáo Dục",
+            "namxb": 2021
+        }
+    ],
+    "Userdata": [
+        {
+            "id": 1,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 2,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 3,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 4,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 5,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 6,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 7,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 8,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        },
+        {
+            "id": 9,
+            "ten": "VELT",
+            "email": "nguyenminhduc@gmail.com",
+            "username": "MrVELT",
+            "sdt": 1234567890,
+            "quyen": "Scan"
+        }
+    ],
+    "Rolldata": [
+        {
+            "name": "Admin"
+        },
+        {
+            "name": "Scan"
+        },
+        {
+            "name": "Thiết lập text"
+        },
+        {
+            "name": "Thiết lập audio"
+        },
+        {
+            "name": "Kiểm tra"
+        }
     ]
 }
