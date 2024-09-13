@@ -34,3 +34,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+## Version
+
+Nodejs: v20.15.0
+React: v18.0.0
+Next.js: v14.2.11
+Typescript: v5.4.5
+Tailwindcss: v3.4.1
+Tailwind-merge: v2.5.2
+Tailwindcss-animate: v1.0.7
+Eslint: v8.0.0
+Eslint-config-next: v14.2.11
+Eslint-plugin-tailwindcss: v3.17.4
