@@ -1,10 +1,9 @@
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Sidebar from "@/components/sidebar";
 
 export default function Home() {
   return (
     <div>
-      <FontAwesomeIcon icon={faHouse} />
+      <Sidebar/>
     </div>
   );
 }
