@@ -11,12 +11,17 @@ const Sidebar = () => {
   return (
     <div className="flex">
       <div className={`h-screen bg-blue-400 pt-8 text-white ${isOpen ? 'w-64' : 'w-20'} relative duration-300`}>
-        <button
-          className="absolute right-3 top-9 text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <FontAwesomeIcon icon={faCircleXmark}/> : <FontAwesomeIcon icon={faArrowRight}/>}
-        </button>
+        <div className='shadow-lg h-16'>
+            <button
+            className="absolute right-3 top-9 text-2xl"
+            onClick={() => setIsOpen(!isOpen)}
+            >
+            {isOpen ? <FontAwesomeIcon icon={faCircleXmark}/> :  <FontAwesomeIcon icon={faArrowRight}/>}
+            </button>
+            {isOpen && 
+                <h1 className='uppercase text-3xl mt-10 ml-5 font-bold'>số hóa sách</h1>
+            }
+        </div>
         <div className="mt-20 flex flex-col gap-4">
         <Link href="/">
           <div className="flex h-10 w-full items-center gap-4 rounded-lg p-5 hover:bg-white hover:text-black">
