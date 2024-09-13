@@ -2,22 +2,18 @@
 
 import { useState } from 'react';
 import Sidebar from '@/components/sidebar';
-import Navbar from '@/components/navbar';
 
 export default function ClientOnlyLayout({ children }: { children: React.ReactNode }) {
-    const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(false);
 
-    const toggleSidebar = () => {
-        setIsSidebarOpen(!isSidebarOpen);
+    const toggleUser = () => {
+        setIsOpen(!isOpen);
     };
 
     return (
         <div className="flex w-full">
-            <Navbar />
-            <div className='flex mt-[60px]'>
-                <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-                <main>{children}</main>
-            </div>
+            <Sidebar isOpen={isOpen} toggleUser={toggleUser} />
+            <main className="flex flex-1 mt-8">{children}</main>
         </div>
     );
 }

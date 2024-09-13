@@ -122,10 +122,10 @@ function getHrefByText(text: string): string {
 }
 
 
-export default function MiniDrawer() {
+export default function MiniDrawer({ isOpen, toggleUser }: { isOpen: boolean, toggleUser: () => void }
+) {
     const theme = useTheme();
     const [open, setOpen] = React.useState(false);
-    const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname();
 
     const handleDrawerOpen = () => {
@@ -134,10 +134,6 @@ export default function MiniDrawer() {
 
     const handleDrawerClose = () => {
         setOpen(false);
-    };
-
-    const toggleUser = () => {
-        setIsOpen(!isOpen);
     };
 
     return (

@@ -70,7 +70,7 @@
 }
 
 /* globals.css */
-html,
+/* html,
 body {
   margin: 0;
   padding: 0;
@@ -89,25 +89,4 @@ body {
 a {
   color: inherit;
   text-decoration: none;
-}
-
-/* Styles for sidebar */
-/* .sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 240px;
-  background-color: #1a202c;
-  color: #ffffff;
-  transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%);
-}
-
-.sidebar {
-  transform: translateX(-100%);
-}
-
-.sidebar-open {
-  transform: translateX(0);
 } */
