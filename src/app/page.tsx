@@ -1,9 +1,9 @@
-import Sidebar from "@/components/sidebar";
+import Login from "./login/page";
 
 export default function Home() {
   return (
     <div>
-      <Sidebar/>
+      <Login/>
     </div>
   );
 }
