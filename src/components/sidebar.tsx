@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faUser, faCog, faArrowRight, faCircleXmark } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faUser, faCog, faArrowRight, faCircleXmark, faList } from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
 const Sidebar = () => {
@@ -13,7 +13,7 @@ const Sidebar = () => {
       <div className={`h-screen bg-blue-400 pt-8 text-white ${isOpen ? 'w-64' : 'w-20'} relative duration-300`}>
         <div className='shadow-lg h-16'>
             <button
-            className="absolute right-3 top-9 text-2xl"
+            className="absolute right-3 top-5 text-2xl"
             onClick={() => setIsOpen(!isOpen)}
             >
             {isOpen ? <FontAwesomeIcon icon={faCircleXmark}/> :  <FontAwesomeIcon icon={faArrowRight}/>}
@@ -49,9 +49,10 @@ const Sidebar = () => {
         </Link>
         </div>
       </div>
-      <div className="flex-1 p-7">
-        <h1 className="text-2xl font-semibold">Nội dung chính</h1>
-        <p>Đây là khu vực nội dung chính.</p>
+      <div className="flex-1 p-7 bg-blue-400 h-24 shadow-lg">
+        <button>
+          <FontAwesomeIcon icon = {faList} className='size-10'/>
+        </button>
       </div>
     </div>
   );
