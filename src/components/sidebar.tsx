@@ -11,7 +11,7 @@ const Sidebar = () => {
   return (
     <div className="flex">
       <div className={`h-screen bg-blue-400 pt-8 text-white ${isOpen ? 'w-64' : 'w-20'} relative duration-300`}>
-        <div className='shadow-lg h-16'>
+        <div className='h-16 shadow-lg'>
             <button
             className="absolute right-3 top-5 text-2xl"
             onClick={() => setIsOpen(!isOpen)}
@@ -19,7 +19,7 @@ const Sidebar = () => {
             {isOpen ? <FontAwesomeIcon icon={faCircleXmark}/> :  <FontAwesomeIcon icon={faArrowRight}/>}
             </button>
             {isOpen && 
-                <h1 className='uppercase text-3xl mt-10 ml-5 font-bold'>số hóa sách</h1>
+                <h1 className='ml-5 mt-10 text-3xl font-bold uppercase'>số hóa sách</h1>
             }
         </div>
         <div className="mt-20 flex flex-col gap-4">
@@ -49,7 +49,7 @@ const Sidebar = () => {
         </Link>
         </div>
       </div>
-      <div className="flex-1 p-7 bg-blue-400 h-24 shadow-lg">
+      <div className="h-24 flex-1 bg-blue-400 p-7 shadow-lg">
         <button>
           <FontAwesomeIcon icon = {faList} className='size-10'/>
         </button>
